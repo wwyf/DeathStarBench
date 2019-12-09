@@ -39,6 +39,6 @@ spec:
     spec:
       containers:
       - name: compose-post-service
-        image: yg397/social-network-microservices
+        image: harbor.wwyf.top/yg397/social-network-microservices
         command: ["ComposePostService"]
       restartPolicy: Always

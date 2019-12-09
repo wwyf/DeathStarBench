@@ -37,6 +37,6 @@ spec:
     spec:
       containers:
       - name: user-timeline-service
-        image: yg397/social-network-microservices
+        image: harbor.wwyf.top/yg397/social-network-microservices
         command: ["UserTimelineService"]
       restartPolicy: Always

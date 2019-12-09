@@ -39,7 +39,7 @@ spec:
     spec:
       containers:
       - name: nginx-thrift
-        image: yg397/openresty-thrift:xenial
+        image: harbor.wwyf.top/yg397/openresty-thrift:xenial
         ports: 
         - containerPort: 8080
         volumeMounts:
@@ -57,21 +57,21 @@ spec:
       volumes:
       - name: lua-scripts
         hostPath: 
-          path: /root/DeathStarBench/socialNetwork/nginx-web-server/lua-scripts-k8s
+          path: /share/wyf/0code/DeathStarBench/socialNetwork/nginx-web-server/lua-scripts-k8s
           type: Directory
       - name: pages
         hostPath: 
-          path: /root/DeathStarBench/socialNetwork/nginx-web-server/pages
+          path: /share/wyf/0code/DeathStarBench/socialNetwork/nginx-web-server/pages
           type: Directory
       - name: nginx-conf
         hostPath: 
-          path: /root/DeathStarBench/socialNetwork/nginx-web-server/conf/nginx-k8s.conf
+          path: /share/wyf/0code/DeathStarBench/socialNetwork/nginx-web-server/conf/nginx-k8s.conf
           type: File
       - name: jaeger-config-json
         hostPath: 
-          path: /root/DeathStarBench/socialNetwork/nginx-web-server/jaeger-config.json
+          path: /share/wyf/0code/DeathStarBench/socialNetwork/nginx-web-server/jaeger-config.json
           type: File
       - name: gen-lua
         hostPath: 
-          path: /root/DeathStarBench/socialNetwork/gen-lua
+          path: /share/wyf/0code/DeathStarBench/socialNetwork/gen-lua
           type: Directory
